@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,500;1,100&display=swap');
+
 body,
 html {
     padding: 0;
@@ -10,7 +11,7 @@ html {
 
 }
 
-.navbar1{
+.navbar1 {
     display: flex;
     position: fixed;
     align-items: flex-start;
@@ -47,12 +48,12 @@ nav li:hover {
 
 }
 
-nav li a:hover{
+nav li a:hover {
     z-index: 10;
     color: white;
 }
 
-#Welcome-section {
+#welcome-section {
     height: 100vh;
     background-color: rgb(34, 34, 36);
     display: flex;
@@ -61,7 +62,7 @@ nav li a:hover{
     align-items: center;
 }
 
-#Welcome-section .title {
+#welcome-section .title {
     color: white;
     font-size: 3.5rem;
     font-weight: 500;
@@ -69,7 +70,7 @@ nav li a:hover{
 }
 
 
-#Welcome-section .description {
+#welcome-section .description {
     color: #be3144;
     font-style: italic;
     font-size: 2rem;
@@ -85,7 +86,7 @@ nav li a:hover{
     background-color: rgb(69, 86, 125);
 }
 
-.project-title {
+.project-tile {
     font-size: 2.5rem;
     border-bottom: 1px white solid;
     max-width: 640px;
@@ -100,6 +101,18 @@ nav li a:hover{
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .containerProjects {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .containerProjects {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
 }
 
 .projectContainer {
@@ -127,8 +140,8 @@ nav li a:hover{
     transition: all 0.5s;
 }
 
-a{
-    text-decoration: none!important;
+a {
+    text-decoration: none !important;
 }
 
 .hover1 {
@@ -139,7 +152,15 @@ a{
 
 .img {
     width: 400px;
+    height: 400px;
     min-width: 200px;
+}
+
+@media (max-width: 800px) {
+    .img {
+        width: inherit;
+        max-width: 400px !important;
+    }
 }
 
 .button {
@@ -158,7 +179,7 @@ a{
     background-color: rgb(190, 49, 68);
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,24 +187,24 @@ a{
     background-color: rgb(48, 56, 65);
     height: 100vh;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
-.footer__title{
+.footer__title {
     color: white;
     font-size: 4rem;
     font-weight: 600;
     margin: 0;
 }
 
-.footer__description{
+.footer__description {
     color: rgb(177, 174, 174);
     font-size: 1.2rem;
     font-style: italic;
     font-family: 'Poppins', sans-serif;
 }
 
-.footer__links{
+.footer__links {
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -192,7 +213,7 @@ a{
     margin-top: 50px;
 }
 
-.footer__links:hover{
+.footer__links:hover {
     color: white;
     animation: down 1s none;
     position: relative;
@@ -200,19 +221,19 @@ a{
 }
 
 @keyframes down {
-    0%{
+    0% {
         top: 5px;
     }
 
-    50%{
+    50% {
         top: 8px;
     }
 
-    100%{
+    100% {
         top: 0px;
     }
 }
 
-i{
+i {
     margin: 0 7px;
 }
